@@ -34,12 +34,9 @@ int main()
   {
     string l;
     getline(myfile,s[k].name,',');
-cout<<s[k].name<<endl;
     getline(myfile,l,',');
     s[k].perc=atof(l.c_str());
-cout<<s[k].perc<<endl;
     getline(myfile,s[k].caste,',');
-cout<<s[k].caste;
     s[k].allot="NULL";
   }
   myfile.close();
@@ -50,19 +47,14 @@ cout<<s[k].caste;
     string lgen,lobc,lsc,lst;
 
     getline(myfile,c[k].name,',');
-cout<<c[k].name<<endl;
     getline(myfile,lgen,',');
     c[k].gen=atoi(lgen.c_str());
-cout<<c[k].gen<<",";
     getline(myfile,lobc,',');
     c[k].obc=atoi(lobc.c_str());
-cout<<c[k].obc<<",";
     getline(myfile,lsc,',');
     c[k].sc=atoi(lsc.c_str());
-cout<<c[k].sc<<",";
     getline(myfile,lst,',');
-    c[k].st=atoi(lst.c_str());
-cout<<c[k].st<<",";
+    c[k].st=atoi(lst.c_str()); 
   }
 myfile.close();
 
